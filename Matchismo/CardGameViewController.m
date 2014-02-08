@@ -27,11 +27,13 @@
 - (IBAction)switchGame:(UISegmentedControl *)sender {
     self.game = nil;
     
-    if (self.gameSegmentControl.selectedSegmentIndex == 0) {
+    if (self.gameSegmentControl.selectedSegmentIndex == 0)
+    {
         self.game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                         andDeck:[[PlayingCardDeck alloc] init]];
     }
-    else {
+    else
+    {
         self.game = [[ThreeCardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                              andDeck:[[PlayingCardDeck alloc] init]];
     }
@@ -42,14 +44,17 @@
 }
 
 
-- (IBAction)dealCards:(UIButton *)sender {
+- (IBAction)dealCards:(UIButton *)sender
+{
     self.game = nil;
     
-    if (self.gameSegmentControl.selectedSegmentIndex == 0) {
+    if (self.gameSegmentControl.selectedSegmentIndex == 0)
+    {
         self.game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                         andDeck:[[PlayingCardDeck alloc] init]];
     }
-    else {
+    else
+    {
         self.game = [[ThreeCardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                         andDeck:[[PlayingCardDeck alloc] init]];
     }
@@ -74,7 +79,8 @@
 
 - (CardMatchingGame *)game
 {
-    if (!_game) {
+    if (!_game)
+    {
         _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                     andDeck:[[PlayingCardDeck alloc] init]];
         self.tapCount = 0;
@@ -84,7 +90,8 @@
 
 - (void)updateUI
 {
-    for (UIButton *cardButton in self.cardButtons) {
+    for (UIButton *cardButton in self.cardButtons)
+    {
         Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardButton]];
         
         [cardButton setTitle:card.contents forState:UIControlStateSelected];
@@ -96,10 +103,12 @@
         
         
         UIImage *background = [UIImage imageNamed:@"bg.jpg"];
-        if (!cardButton.isSelected || !cardButton.enabled) {
+        if (!cardButton.isSelected || !cardButton.enabled)
+        {
             [cardButton setBackgroundImage:background forState:UIControlStateNormal];
         }
-        else {
+        else
+        {
             [cardButton setBackgroundImage:nil forState:UIControlStateNormal];
         }
         
