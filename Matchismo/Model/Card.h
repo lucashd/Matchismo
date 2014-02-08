@@ -3,7 +3,7 @@
 //  Matchismo
 //
 //  Created by Lucas David
-//  Copyright (c) 2013 lucashd. All rights reserved.
+//  Copyright (c) 2014 lucashd. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
