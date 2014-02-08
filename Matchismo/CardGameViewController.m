@@ -2,8 +2,8 @@
 //  CardGameViewController.m
 //  Matchismo
 //
-//  Created by Lucas David on 8/24/13.
-//  Copyright (c) 2013 lucashd. All rights reserved.
+//  Created by Lucas David
+//  Copyright (c) 2014 lucashd. All rights reserved.
 //
 
 #import "CardGameViewController.h"
