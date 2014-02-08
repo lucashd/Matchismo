@@ -2,8 +2,8 @@
 //  Deck.h
 //  Matchismo
 //
-//  Created by Lucas David on 8/27/13.
-//  Copyright (c) 2013 xalusc. All rights reserved.
+//  Created by Lucas David
+//  Copyright (c) 2013 lucashd. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
